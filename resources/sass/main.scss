@@ -1,0 +1,110 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+	outline:  none;
+}
+html {
+	height: 100%;
+}
+body {
+	background: white;
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+#super {
+	width: 100%;
+	height: 100%;
+	#content {
+		width: 60%;
+		float: left;
+		border-right: 1px solid darkorange;
+	}
+
+	#sidebar {
+		width: 39%;
+		float: right;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+header {
+	width: 99%;
+	background: goldenrod;
+	border-bottom: 1px solid darkorange;
+	padding: 0.5%;
+	margin-bottom: 1%;
+
+	#logo {
+		font-size: 3em;
+		font-style: serif;
+		color: white;
+	}
+	#logo:hover{
+		background: gold;
+		border-radius: 10px;
+		transition-duration: 3s;
+	}
+	#profile{
+		float: right;
+		margin-right: 5%;
+		font-size: 2.5em;
+		color: whitesmoke;
+	}
+	#profile:hover{
+		background: gold;
+		border-radius: 10px;
+		transition-duration: 3s;
+	}
+}
+
+footer {
+	background: goldenrod;
+	color: black;
+	font-style: serif;
+	font-size: 1.3em;
+	user-select: none;
+
+	display: table-row;
+	height: 100px;
+}
+
+.block {
+	float: left;
+	width: 30%;
+	height: 250px;
+	border: 1px solid darkorange;
+	background: lightgoldenrodyellow;
+	border-radius: 25px;
+	margin: 1%;
+	p{	
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	img {
+		margin-top: 2%;
+		margin-left: 10%;
+		width: 70%;
+		height: 70%;
+	}
+}
+.block:hover{
+	background: goldenrod;
+	transition-duration: 3s;
+	border-radius: 20px;
+}
+
+p {
+	opacity: 80%;
+	font-size: 1.6em;
+	margin-top: 1%;
+	margin-left: 2%;
+	font-style: oblique;
+	user-select: none;
+}
